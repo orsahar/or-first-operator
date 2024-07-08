@@ -34,13 +34,19 @@ spec:
           spec:
             description: MyAppSpec defines the desired state of MyApp
             properties:
-              foo:
-                description: Foo is an example field of MyApp. Edit myapp_types.go
-                  to remove/update
-                type: string
+              size:
+                format: int32
+                type: integer
             type: object
           status:
             description: MyAppStatus defines the observed state of MyApp
+            properties:
+              replicas:
+                description: 'INSERT ADDITIONAL STATUS FIELD - define observed state
+                  of cluster Important: Run "make" to regenerate code after modifying
+                  this file'
+                format: int32
+                type: integer
             type: object
         type: object
     served: true

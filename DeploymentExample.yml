@@ -1,0 +1,6 @@
+apiVersion: apps.my.domain/v1alpha1
+kind: MyApp
+metadata:
+  name: myapp-sample
+spec:
+  size: 3

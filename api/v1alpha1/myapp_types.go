@@ -28,14 +28,14 @@ type MyAppSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of MyApp. Edit myapp_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	Size int32 `json:"size,omitempty"`
 }
 
 // MyAppStatus defines the observed state of MyApp
 type MyAppStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
+	Replicas int32 `json:"replicas,omitempty"`
 }
 
 //+kubebuilder:object:root=true
